@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import '../App.css'
 
 import Projects from '../components/project-section'
@@ -68,12 +68,9 @@ return (
 
         {/* Button */}
         <div className="anim-3 flex gap-4 flex-wrap mt-6">
-        <a 
-            href="/projects" 
-            className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-500 transition-all font-semibold text-sm tracking-wide text-white hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]"
-        >
-            View Projects
-        </a>
+        <Link to="/projects" className="px-6 py-3 rounded-full bg-blue-600 hover:bg-blue-500 transition-all font-semibold text-sm tracking-wide text-white hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]">
+          View Projects
+        </Link>
         <a 
             href="/cv-antoine-graber.pdf"
             download
