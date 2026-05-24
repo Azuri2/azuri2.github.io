@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import '../App.css'
 
-import Navbar from '../components/navbar'
 import Projects from '../components/project-section'
 import Contact from '../components/contact'
 import About from '../components/about'
@@ -10,7 +9,6 @@ import Skills from '../components/skills'
 import Footer from '../components/footer'
 
 function Home() {
-  const [count, setCount] = useState(0)
   const location = useLocation()
 
   useEffect(() => {
