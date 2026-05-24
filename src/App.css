@@ -1,0 +1,49 @@
+/* ===== MODERN SLIDER BAR ===== */
+
+.custom-scroll {
+  scroll-behavior: smooth;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(59,130,246,0.6) transparent;
+}
+
+/* Chrome / Safari */
+.custom-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.03);
+  border-radius: 999px;
+  margin-inline: 60px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(59,130,246,0.85),
+    rgba(168,85,247,0.85)
+  );
+
+  border: 2px solid rgba(15,23,42,0.9);
+
+  transition: all 0.3s ease;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(96,165,250,1),
+    rgba(192,132,252,1)
+  );
+}
+
+.custom-scroll::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}

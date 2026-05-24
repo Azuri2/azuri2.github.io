@@ -1,0 +1,31 @@
+{
+  "epitech": [
+    {
+      "title": "Job Aggregator",
+      "category": "Fullstack Web Application",
+      "description": "A modern job platform centralizing job offers with authentication, company profiles and responsive design.",
+      "tech": ["Next.js", "Express", "PostgreSQL", "TailwindCSS"],
+      "github": "#",
+      "img-background": ""
+    }
+  ],
+  "personal": [
+    {
+      "title": "Portfolio Website",
+      "category": "Frontend Development",
+      "description": "Responsive portfolio showcasing projects, progression and technical skills through a modern UI.",
+      "tech": ["React", "TailwindCSS", "Framer Motion"],
+      "github": "#",
+      "img-background": ""
+    },
+    {
+      "title": "FiveM Dashboard",
+      "category": "Game Web Interface",
+      "description": "Interactive dashboard connected to a FiveM server with analytics and statistics of players.",
+      "tech": ["Laravel", "Vue.js", "Chart.js"],
+      "github": "#",
+      "img-background": "/img/projects-img/five-cortex.png"
+
+    }
+  ]
+}
