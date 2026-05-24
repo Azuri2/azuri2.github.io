@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useLocation, Link } from 'react-router-dom' // Remplacement ici
+import { useLocation, Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -8,6 +8,17 @@ export default function Navbar() {
   const isProjectsPage = location.pathname === '/projects'
   const isJourneyPage = location.pathname === '/journey'
   const isHomePage = location.pathname === '/'
+
+  const handleContactClick = (e: React.MouseEvent) => {
+    setMenuOpen(false)
+    if (isHomePage) {
+      e.preventDefault()
+      const element = document.getElementById('contact')
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
 
   return (
     <nav className="h-[70px] fixed top-0 left-0 w-full mt-2 bg-black/40 backdrop-blur-md px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-50 text-gray-400 border-b border-white/[0.05]">
@@ -28,9 +39,13 @@ export default function Navbar() {
             <Link to="/journey" className={`transition-colors ${!isJourneyPage ? 'text-white font-medium hover:text-blue-300' : 'text-blue-400 font-medium'}`}>
               Learning Journey
             </Link>
-            <a href="#/" className="transition-colors text-white font-medium hover:text-blue-300">
+            <Link 
+              to="/#contact" 
+              onClick={handleContactClick}
+              className="transition-colors text-white font-medium hover:text-blue-300"
+            >
               Contact
-            </a>
+            </Link>
         </div>
 
         {/* Hamburger Menu mobile */}
@@ -51,9 +66,13 @@ export default function Navbar() {
             <Link to="/journey" onClick={() => setMenuOpen(false)} className={`transition-colors ${!isJourneyPage ? 'text-white font-medium hover:text-blue-300' : 'text-blue-400 font-medium'}`}>
               Learning Journey
             </Link>
-            <a href="#/contact" onClick={() => setMenuOpen(false)} className="transition-colors text-white font-medium hover:text-blue-300">
+            <Link 
+              to="/#contact" 
+              onClick={handleContactClick}
+              className="transition-colors text-white font-medium hover:text-blue-300"
+            >
               Contact
-            </a>
+            </Link>
         </div>
     </nav>
   )
