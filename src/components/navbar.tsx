@@ -51,7 +51,7 @@ export default function Navbar() {
             <Link to="/journey" onClick={() => setMenuOpen(false)} className={`transition-colors ${!isJourneyPage ? 'text-white font-medium hover:text-blue-300' : 'text-blue-400 font-medium'}`}>
               Learning Journey
             </Link>
-            <a href="#/" onClick={() => setMenuOpen(false)} className="transition-colors text-white font-medium hover:text-blue-300">
+            <a href="#/contact" onClick={() => setMenuOpen(false)} className="transition-colors text-white font-medium hover:text-blue-300">
               Contact
             </a>
         </div>
