@@ -7,6 +7,38 @@
       "tech": ["Next.js", "Express", "PostgreSQL", "TailwindCSS"],
       "github": "#",
       "img-background": ""
+    },
+    {
+      "title": "Codename",
+      "category": "AI Security",
+      "description": "A hardened Ollama agent that keeps a secret codeword behind a password, and a toolkit of five prompt injection attacks, each from a different family, to extract it from other agents.",
+      "tech": ["Ollama", "LLM", "Prompt Engineering"],
+      "github": "#",
+      "img-background": ""
+    },
+    {
+      "title": "Start Trek",
+      "category": "Reinforcement Learning",
+      "description": "An autonomous lunar lander trained by trial and error with DQN and PPO agents in the Gymnasium Lunar Lander simulator, with metrics and a detailed report.",
+      "tech": ["Python", "PyTorch", "Gymnasium", "NumPy"],
+      "github": "#",
+      "img-background": ""
+    },
+    {
+      "title": "2D Game",
+      "category": "Game Development",
+      "description": "A 2D game made in Java following OOP principles and design patterns, with UML diagrams, test coverage, Javadoc documentation and a playable demo.",
+      "tech": ["Java", "OOP", "UML", "JUnit"],
+      "github": "#",
+      "img-background": ""
+    },
+    {
+      "title": "Dr CVRIE",
+      "category": "Machine Learning",
+      "description": "A medical AI combining a supervised model that classifies medical images and an unsupervised model that clusters patient testimonies by pathology and urgency.",
+      "tech": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+      "github": "#",
+      "img-background": ""
     }
   ],
   "personal": [

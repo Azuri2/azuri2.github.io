@@ -62,6 +62,42 @@ const projects = [
     icon: '🤖',
     github: '#',
 },
+{
+    title: 'Codename',
+    tag: 'LLM, Ollama, Prompt Engineering - EPITECH',
+    desc: 'Harden an Ollama agent so it keeps a secret codeword, and build a toolkit of five prompt injection attacks to extract it from other agents.',
+    year: '2026',
+    gradient: 'linear-gradient(135deg,#0ea5e9,#2563eb)',
+    icon: '🔐',
+    github: '#',
+},
+{
+    title: 'Start Trek',
+    tag: 'Python, PyTorch, Gymnasium - EPITECH',
+    desc: 'Train a lunar module to land by itself using reinforcement learning (DQN and PPO) in the Gymnasium Lunar Lander simulator.',
+    year: '2026',
+    gradient: 'linear-gradient(135deg,#059669,#0ea5e9)',
+    icon: '🚀',
+    github: '#',
+},
+{
+    title: '2D Game',
+    tag: 'Java, OOP - EPITECH',
+    desc: 'Design and develop a 2D game in Java following OOP principles, with UML diagrams, test coverage and Javadoc documentation.',
+    year: '2026',
+    gradient: 'linear-gradient(135deg,#7c3aed,#db2777)',
+    icon: '🎮',
+    github: '#',
+},
+{
+    title: 'Dr CVRIE',
+    tag: 'Python, Scikit-learn, Pandas - EPITECH',
+    desc: 'Build a medical AI: a supervised model to classify medical images and an unsupervised model to cluster patient testimonies by pathology.',
+    year: '2026',
+    gradient: 'linear-gradient(135deg,#059669,#0ea5e9)',
+    icon: '🩺',
+    github: '#',
+},
 ]
 
 export default function Projects() {
